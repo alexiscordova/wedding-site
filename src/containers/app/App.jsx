@@ -1,24 +1,20 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import GlobalHeader from 'Components/global-header/GlobalHeader'
 import GlobalFooter from 'Components/global-footer/GlobalFooter'
+import Home from 'Containers/home/Home'
 
-const App = ({ children }) => {
+const App = () => {
   return (
     <article className="react-root">
       <GlobalHeader />
 
       <main>
-        {children}
+        <Home />
       </main>
 
       <GlobalFooter />
     </article>
   )
-}
-
-App.propTypes = {
-  children: PropTypes.any.isRequired
 }
 
 export default App
