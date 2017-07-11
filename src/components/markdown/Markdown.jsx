@@ -21,7 +21,7 @@ class Markdown extends Component {
   render() {
     return (
       <div
-        className="markdown column-small-12"
+        className="markdown"
         dangerouslySetInnerHTML={{ __html: this.markdown }}
       />
     )

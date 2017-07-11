@@ -23,9 +23,11 @@ const Home = () => {
         />
       </div>
 
-      <Markdown
-        text={welcomeText}
-      />
+      <div className="column-small-12">
+        <Markdown
+          text={welcomeText}
+        />
+      </div>
 
       <div className="editorial column-small-12">
         <h3>Event Details</h3>
