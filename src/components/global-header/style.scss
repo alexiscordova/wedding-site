@@ -1,0 +1,46 @@
+header {
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  right: 0;
+  left: 0;
+  align-items: center;
+  padding: 10px 0;
+  background-color: rgba($true-black, 0.45);
+
+  @include breakpoint(medium) {
+    padding: 5px 0;
+  }
+
+  .header-logo img {
+    width: 40px;
+    height: 40px;
+
+    @include breakpoint(medium) {
+      width: 75px;
+      height: 75px;
+    }
+  }
+
+  .header-navigation {
+    text-align: right;
+
+    [role="navigation"] {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .nav-link {
+      padding: 5px 2px;
+      font-size: $small-font-size;
+      font-weight: $light-font-weight;
+      color: $true-white;
+      text-transform: uppercase;
+      text-decoration: none;
+
+      @include breakpoint(medium) {
+        font-size: $text-font-size;
+      }
+    }
+  }
+}
