@@ -1,0 +1,126 @@
+$postcard-width: 550px;
+$postcard-height: 800px;
+
+.flip-container {
+  perspective: 800px;
+}
+
+.postcard {
+  position: relative;
+  margin: 4.5vh auto;
+  width: 100%;
+  height: 80vh;
+  box-shadow:
+    -1px -1px 2px $gray,
+    -1px 1px 2px $gray,
+    1px -1px 2px $gray,
+    1px 1px 2px $gray;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+  cursor: pointer;
+  -webkit-tap-highlight-color: rgba($true-black, 0);
+
+  @include breakpoint(medium) {
+    margin: 5vh auto;
+    width: $postcard-width;
+    height: $postcard-height;
+  }
+
+  // Flip animation class
+  &.flipped {
+    transform: rotateY(-180deg);
+  }
+
+  // Each side of the postcard
+  figure {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+
+  .postcard-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    height: 100%;
+  }
+}
+
+.postcard-front {
+  color: $true-white;
+  font-family: $heading-font-family;
+  font-weight: 300;
+  border: 15px solid $true-white;
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/91494/ggb.jpg) 35% center no-repeat;
+  background-size: cover;
+
+  @include breakpoint(medium) {
+    background-position: 40% center;
+  }
+
+  .postcard-date {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1 0 auto;
+    font-size: 11.0rem;
+
+    @include breakpoint(medium) {
+      font-size: 18.0rem;
+    }
+  }
+
+  .postcard-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    font-size: 1.4rem;
+
+    li {
+      letter-spacing: 0.1rem;
+    }
+
+    li:not(:last-child) {
+      position: relative;
+      z-index: 1;
+      margin-right: 15px;
+
+      &:after {
+        position: absolute;
+        z-index: 1;
+        top: 2px;
+        right: -7px;
+        width: 1px;
+        height: 14px;
+        background-color: $true-white;
+        content: '';
+      }
+    }
+  }
+}
+
+.postcard-back {
+  padding: 20px;
+  color: $true-black;
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/91494/download.jpg) center center no-repeat;
+  background-size: cover;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  transform: rotateY(-180deg);
+
+  .postcard-wrapper {
+    font-family: $base-font-family;
+  }
+
+  .postcard-text-wrapper {
+    margin-bottom: auto;
+  }
+
+  .postcard-title {
+    margin-bottom: 25px;
+  }
+}
