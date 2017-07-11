@@ -1,30 +1,30 @@
 // Utility Classes
 
-.text-center {
+.u-text-center {
   text-align: center;
 }
 
-.text-uppercase {
+.u-text-uppercase {
   text-transform: uppercase;
 }
 
-.list-unstyled {
+.u-list-unstyled {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.list-inline li {
+.u-list-inline li {
   display: inline-block;
 }
 
 // Hide an element
-.is-hidden {
+.u-is-hidden {
   display: none;
 }
 
 // Hide an element on small breakpoint
-.is-hidden-small {
+.u-is-hidden-small {
   display: none !important;
 
   @include breakpoint(medium) {
@@ -33,7 +33,7 @@
 }
 
 // Hide an element on medium breakpoint
-.is-hidden-medium {
+.u-is-hidden-medium {
   display: inherit !important;
 
   @include breakpoint(medium) {
@@ -42,10 +42,21 @@
 }
 
 // Hide an element on large breakpoint
-.is-hidden-large {
+.u-is-hidden-large {
   display: inherit !important;
 
   @include breakpoint(large) {
     display: none !important;
   }
+}
+
+.u-pad {
+  margin: 0 auto;
+  max-width: 960px;
+  width: 100%;
+}
+
+.u-img-responsive {
+  display: block;
+  width: 100%;
 }
