@@ -1,0 +1,21 @@
+.hero {
+  position: relative;
+  z-index: 1;
+
+  .hero-metadata {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    padding-top: 25%;
+    width: 100%;
+    height: 100%;
+  }
+
+  svg {
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    width: 100%;
+    height: 5vh;
+  }
+}
