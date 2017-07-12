@@ -10,7 +10,9 @@ const App = () => {
     <article className="react-root">
       <GlobalHeader />
 
-      <Home />
+      <main>
+        <Home />
+      </main>
 
       <GlobalFooter />
     </article>
