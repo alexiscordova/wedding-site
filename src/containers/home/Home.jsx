@@ -36,13 +36,9 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="row">
-        <div className="column-small-12">
-          <Markdown
-            text={welcomeText}
-          />
-        </div>
-      </div>
+      <Markdown
+        text={welcomeText}
+      />
 
       <div className="row">
         <div className="column-small-12">
@@ -60,13 +56,9 @@ const Home = () => {
         weddingDate="04/21/2018 4:30 PM"
       />
 
-      <div className="row">
-        <div className="column-small-12">
-          <Markdown
-            text={travelAndAccomodationsText}
-          />
-        </div>
-      </div>
+      <Markdown
+        text={travelAndAccomodationsText}
+      />
 
       <div className="row">
         <div className="editorial column-small-12">

@@ -20,10 +20,15 @@ class Markdown extends Component {
 
   render() {
     return (
-      <div
-        className="markdown"
-        dangerouslySetInnerHTML={{ __html: this.markdown }}
-      />
+      <section className="markdown">
+        <div className="row u-container u-block-center">
+          <div className="column-small-12">
+            <div
+              dangerouslySetInnerHTML={{ __html: this.markdown }}
+            />
+          </div>
+        </div>
+      </section>
     )
   }
 }
