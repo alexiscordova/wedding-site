@@ -2,6 +2,7 @@ import React from 'react'
 import Hero from 'Components/hero/Hero'
 import Markdown from 'Components/markdown/Markdown'
 import Editorial from 'Components/editorial/Editorial'
+import Countdown from 'Components/countdown/Countdown'
 import config from 'Data/config'
 import weddingEventDetails from 'Data/weddingDetailData'
 import travelAndAccomodationsText from 'Data/travelAndAccomodations'
@@ -55,8 +56,10 @@ const Home = () => {
 
       <div className="row">
         <div className="countdown column-small-12">
-          <h3>Countdown</h3>
-          <p>Countdown timer to April 21, 2018</p>
+          <Countdown
+            title="Countdown"
+            weddingDate="04/21/2018 4:30 PM"
+          />
         </div>
       </div>
 

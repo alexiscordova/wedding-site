@@ -1,0 +1,13 @@
+.countdown {
+  .time-remaining {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    [class*="-remaining"] {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
