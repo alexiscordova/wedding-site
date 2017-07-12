@@ -1,0 +1,18 @@
+{
+  "weddingDate": "April 21st, 2018",
+  "bride": {
+    "firstName": "Krystle",
+    "lastName": "Mariano"
+  },
+  "groom": {
+    "firstName": "Alexis",
+    "lastName": "Córdova"
+  },
+  "venue": {
+    "name": "Golden Gate Club at The Presidio",
+    "address": "135 Fisher Loop",
+    "city": "San Francisco",
+    "state": "CA",
+    "zip": "94129"
+  }
+}
