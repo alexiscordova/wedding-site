@@ -73,27 +73,43 @@ class Countdown extends Component {
     } = this.state
 
     return (
-      <div className="countdown">
-        <h3>{this.props.title}</h3>
-        <div className="time-remaining">
-          <div className="days-remaining">
-            <span>{daysRemaining}</span>
-            <span>{daysRemainingLabel}</span>
-          </div>
-          <div className="hours-remaining">
-            <span>{hoursRemaining}</span>
-            <span>{hoursRemainingLabel}</span>
-          </div>
-          <div className="minutes-remaining">
-            <span>{minutesRemaining}</span>
-            <span>{minutesRemainingLabel}</span>
-          </div>
-          <div className="seconds-remaining">
-            <span>{secondsRemaining}</span>
-            <span>{secondsRemainingLabel}</span>
+      <section className="countdown">
+        <div className="row u-container u-block-center">
+          <div className="column-small-12">
+            <h3>{this.props.title}</h3>
           </div>
         </div>
-      </div>
+
+        <div className="row u-container u-block-center">
+          <div className="column-small-12 column-medium-3">
+            <div className="days-remaining">
+              <span>{daysRemaining}</span>
+              <span>{daysRemainingLabel}</span>
+            </div>
+          </div>
+
+          <div className="column-small-12 column-medium-3">
+            <div className="hours-remaining">
+              <span>{hoursRemaining}</span>
+              <span>{hoursRemainingLabel}</span>
+            </div>
+          </div>
+
+          <div className="column-small-12 column-medium-3">
+            <div className="minutes-remaining">
+              <span>{minutesRemaining}</span>
+              <span>{minutesRemainingLabel}</span>
+            </div>
+          </div>
+
+          <div className="column-small-12 column-medium-3">
+            <div className="seconds-remaining">
+              <span>{secondsRemaining}</span>
+              <span>{secondsRemainingLabel}</span>
+            </div>
+          </div>
+        </div>
+      </section>
     )
   }
 }

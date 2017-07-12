@@ -55,14 +55,10 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="row">
-        <div className="countdown column-small-12">
-          <Countdown
-            title="Countdown"
-            weddingDate="04/21/2018 4:30 PM"
-          />
-        </div>
-      </div>
+      <Countdown
+        title="Countdown"
+        weddingDate="04/21/2018 4:30 PM"
+      />
 
       <div className="row">
         <div className="column-small-12">
