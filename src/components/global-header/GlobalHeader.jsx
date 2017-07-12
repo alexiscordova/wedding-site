@@ -3,23 +3,28 @@ import './style.scss'
 
 const GlobalHeader = () => {
   return (
-    <header className="row">
-      <div className="header-logo column-small-2 column-medium-3">
-        <img src="http://placehold.it/85?text=Logo" />
+    <header className="header">
+      <div className="row u-container u-block-center">
+        <div className="column-small-2 column-medium-3">
+          <img className="header-logo" src="http://placehold.it/85?text=Logo" />
+        </div>
+
+        <div className="column-small-10 column-medium-offset-2 column-medium-7">
+          <nav className="header-navigation">
+            <ul className="u-list-unstyled" role="navigation">
+              <li className="header-navigation_item">
+                <a className="header-navigation_link" href="#event-details">Event Details</a>
+              </li>
+              <li className="header-navigation_item">
+                <a className="header-navigation_link" href="#accomodations">Accomodations</a>
+              </li>
+              <li className="header-navigation_item">
+                <a className="header-navigation_link" href="#registry">Registry</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
-      <nav className="header-navigation column-small-10 column-medium-offset-2 column-medium-7">
-        <ul className="u-list-unstyled" role="navigation">
-          <li>
-            <a className="nav-link" href="#event-details">Event Details</a>
-          </li>
-          <li>
-            <a className="nav-link" href="#registry">Registry</a>
-          </li>
-          <li>
-            <a className="nav-link" href="#rsvp">RSVP</a>
-          </li>
-        </ul>
-      </nav>
     </header>
   )
 }
