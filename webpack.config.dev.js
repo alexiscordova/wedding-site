@@ -6,10 +6,11 @@ const StyleLintPlugin = require('stylelint-webpack-plugin')
 
 module.exports = {
   resolve: {
-    extensions: ['*', '.js', '.jsx'],
+    extensions: ['*', '.js', '.jsx', '.json', '.md'],
     alias: {
       Containers: path.resolve(__dirname, 'src/containers'),
-      Components: path.resolve(__dirname, 'src/components')
+      Components: path.resolve(__dirname, 'src/components'),
+      Data: path.resolve(__dirname, 'src/data')
     }
   },
   devtool: 'inline-source-map',
@@ -55,6 +56,13 @@ module.exports = {
               ]
             }
           }
+        ]
+      },
+      {
+        test: /\.md$/,
+        use: [
+          'html-loader',
+          'markdown-loader'
         ]
       },
       {
