@@ -23,7 +23,7 @@ let eventDetails = () => {
 
 const Home = () => {
   return (
-    <main>
+    <section className="content">
       <Hero
         image="http://placehold.it/960x750?text=Hero+Image"
         groom={config.groom.firstName}
@@ -59,6 +59,7 @@ const Home = () => {
       />
 
       <GoogleMap />
+    </section>
   )
 }
 
