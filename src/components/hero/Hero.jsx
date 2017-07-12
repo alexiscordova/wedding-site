@@ -22,7 +22,7 @@ class Hero extends Component {
 
   render() {
     return (
-      <div className="hero">
+      <section className="hero">
         <img className="u-img-responsive" src={this.props.image} />
         <div className="hero-metadata u-text-center">
           <h2>
@@ -36,7 +36,7 @@ class Hero extends Component {
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
           <polygon fill="#f5f5f1" points="0,100 50,0 100,100" />
         </svg>
-      </div>
+      </section>
     )
   }
 }

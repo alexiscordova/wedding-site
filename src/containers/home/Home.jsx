@@ -24,17 +24,13 @@ let eventDetails = () => {
 const Home = () => {
   return (
     <main>
-      <div className="row">
-        <div className="column-small-12 no-gutters">
-          <Hero
-            image="http://placehold.it/960x750?text=Hero+Image"
-            groom={config.groom.firstName}
-            bride={config.bride.firstName}
-            location="The Presidio"
-            date={config.weddingDate}
-          />
-        </div>
-      </div>
+      <Hero
+        image="http://placehold.it/960x750?text=Hero+Image"
+        groom={config.groom.firstName}
+        bride={config.bride.firstName}
+        location="The Presidio"
+        date={config.weddingDate}
+      />
 
       <Markdown
         text={welcomeText}
