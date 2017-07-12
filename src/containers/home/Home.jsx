@@ -1,6 +1,7 @@
 import React from 'react'
 import Hero from 'Components/hero/Hero'
 import Markdown from 'Components/markdown/Markdown'
+import Editorial from 'Components/editorial/Editorial'
 
 const welcomeText = `Hello and welcome! If you’re reading this, this means you received our Save the Date! This will be the go-to resource for all wedding-related details, and we’ll continue to update it as the date approaches. A formal invitation will follow soon, but until then if you have any questions, please [email us](mailto:alexisandkrystle@icloud.com).
 
@@ -23,10 +24,15 @@ const Home = () => {
         />
       </div>
 
-      <div className="column-small-12">
-        <Markdown
-          text={welcomeText}
-        />
+      <div className="row">
+        <div className="column-small-12">
+          <Editorial
+            sectionTitle="Wedding Details"
+            layout="3-up"
+            introduction={eventDetails}
+            content={weddingEventDetails}
+          />
+        </div>
       </div>
 
       <div className="editorial column-small-12">
@@ -39,9 +45,15 @@ const Home = () => {
         <p>This is where we list where we are registered. We should make sure to use the links from theknot.com, so items are properly tracked.</p>
       </div>
 
-      <div className="rsvp column-small-12">
-        <h3>RSVP</h3>
-        <p>Maybe we let people RSVP digitally? This would require a form and something to capture the data; Google Sheets perhaps. It may require people to input a code so we can limit how many people they can RSVP for, which might be overly complicated. We’ll see. </p>
+      <div className="row">
+        <div className="editorial column-small-12">
+          <Editorial
+            sectionTitle="Gift Registry"
+            layout="3-up"
+            introduction="Hi"
+            content={registryData}
+          />
+        </div>
       </div>
 
       <div className="map column-small-12 no-gutters">
