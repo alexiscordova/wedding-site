@@ -1,8 +1,12 @@
 // Utility Classes
-.u-block-center {
-  margin: 0 auto;
-  max-width: 1200px;
+.u-container {
+  max-width: 960px;
   width: 100%;
+}
+
+.u-block-center {
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .u-text-center {
