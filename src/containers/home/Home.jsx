@@ -67,12 +67,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="row">
-        <div className="column-small-12 no-gutters">
-          <GoogleMap />
-        </div>
-      </div>
-    </main>
+      <GoogleMap />
   )
 }
 
