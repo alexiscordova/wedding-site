@@ -10,7 +10,7 @@ import travelAndAccomodationsText from 'Data/travelAndAccomodations'
 import welcomeText from 'Data/welcome'
 import registryData from 'Data/registryData'
 
-const eventDetails = () => {
+let eventDetails = () => {
   return (
     <address>
       {config.venue.name}<br />
