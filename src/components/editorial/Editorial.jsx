@@ -36,31 +36,30 @@ class Editorial extends Component {
       layout,
       content,
       classes
-    } = this.props
-
-    const editorialClasses = classNames('editorial', classes)
+    } = this.props,
+      editorialClasses = classNames('editorial', classes)
 
     return (
-      <div className={editorialClasses}>
+      <section className={editorialClasses}>
         { sectionTitle.length > 0 &&
-          <div className="row">
-            <div className="column-small-12 no-gutters">
+          <div className="row u-container u-block-center">
+            <div className="column-small-12">
               <h3 className="editorial-title">{this.props.sectionTitle}</h3>
             </div>
             { typeof introduction !== 'undefined' &&
-              <div className="column-small-12 no-gutters">
+              <div className="column-small-12">
                 { typeof introduction === 'function' && introduction() }
-                { typeof introduction === 'string' && <p>introduction</p> }
+                { typeof introduction === 'string' && <p>{introduction}</p> }
               </div>
             }
           </div>
         }
 
-        <div className="row">
+        <div className="row u-container u-block-center">
           { layout === '3-up' &&
             content.map((item, index) => {
               return (
-                <div className="column-small-12 column-medium-4 no-gutters" key={index}>
+                <div className="column-small-12 column-medium-4" key={index}>
                   <figure>
                     <a href={item.link}>
                       <img className="editorial-image" src={item.image} />
@@ -72,7 +71,7 @@ class Editorial extends Component {
             })
           }
         </div>
-      </div>
+      </section>
     )
   }
 }

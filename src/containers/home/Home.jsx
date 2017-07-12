@@ -36,16 +36,12 @@ const Home = () => {
         text={welcomeText}
       />
 
-      <div className="row">
-        <div className="column-small-12">
-          <Editorial
-            sectionTitle="Wedding Details"
-            layout="3-up"
-            introduction={eventDetails}
-            content={weddingEventDetails}
-          />
-        </div>
-      </div>
+      <Editorial
+        sectionTitle="Wedding Details"
+        layout="3-up"
+        introduction={eventDetails}
+        content={weddingEventDetails}
+      />
 
       <Countdown
         title="Countdown"
@@ -56,16 +52,11 @@ const Home = () => {
         text={travelAndAccomodationsText}
       />
 
-      <div className="row">
-        <div className="editorial column-small-12">
-          <Editorial
-            sectionTitle="Gift Registry"
-            layout="3-up"
-            introduction="Hi"
-            content={registryData}
-          />
-        </div>
-      </div>
+      <Editorial
+        sectionTitle="Gift Registry"
+        layout="3-up"
+        content={registryData}
+      />
 
       <GoogleMap />
   )
