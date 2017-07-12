@@ -25,7 +25,7 @@
   "rules": {
     "no-var": "error",
     "no-unused-vars": "error",
-    "one-var": ["error", "always"],
+    "one-var": ["error", "never"],
     "object-curly-spacing": ["error", "always"],
     "space-before-function-paren": ["error", "never"],
     "react/no-unused-prop-types": "error",

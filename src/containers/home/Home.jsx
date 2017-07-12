@@ -3,6 +3,7 @@ import Hero from 'Components/hero/Hero'
 import Markdown from 'Components/markdown/Markdown'
 import Editorial from 'Components/editorial/Editorial'
 import Countdown from 'Components/countdown/Countdown'
+import GoogleMap from 'Components/google-map/GoogleMap'
 import config from 'Data/config'
 import weddingEventDetails from 'Data/weddingDetailData'
 import travelAndAccomodationsText from 'Data/travelAndAccomodations'
@@ -83,8 +84,8 @@ const Home = () => {
       </div>
 
       <div className="row">
-        <div className="map column-small-12 no-gutters">
-          <img className="u-img-responsive" src="http://placehold.it/960x400?text=Google+Maps+API" />
+        <div className="column-small-12 no-gutters">
+          <GoogleMap />
         </div>
       </div>
     </main>
