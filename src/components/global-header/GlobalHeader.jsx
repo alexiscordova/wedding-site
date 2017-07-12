@@ -10,9 +10,6 @@ const GlobalHeader = () => {
       <nav className="header-navigation column-small-10 column-medium-offset-2 column-medium-7">
         <ul className="u-list-unstyled" role="navigation">
           <li>
-            <a className="nav-link" href="#our-story">Our Story</a>
-          </li>
-          <li>
             <a className="nav-link" href="#event-details">Event Details</a>
           </li>
           <li>
