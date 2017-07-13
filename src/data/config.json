@@ -9,7 +9,8 @@
     "lastName": "Córdova"
   },
   "venue": {
-    "name": "Golden Gate Club at The Presidio",
+    "name": "Golden Gate Club",
+    "nameAdditional": "at The Presidio",
     "address": "135 Fisher Loop",
     "city": "San Francisco",
     "state": "CA",

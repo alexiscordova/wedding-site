@@ -13,7 +13,7 @@ import registryData from 'Data/registryData'
 let eventDetails = () => {
   return (
     <address>
-      {config.venue.name}<br />
+      {config.venue.name} {config.venue.nameAdditional}<br />
       {config.venue.address}<br />
       {config.venue.city}, {config.venue.state}<br />
       {config.venue.zip}
@@ -28,7 +28,7 @@ const Home = () => {
         image="http://placehold.it/960x750?text=Hero+Image"
         groom={config.groom.firstName}
         bride={config.bride.firstName}
-        location="The Presidio"
+        location={config.venue.name}
         date={config.weddingDate}
       />
 
