@@ -23,19 +23,21 @@ class Hero extends Component {
   render() {
     return (
       <section className="hero">
-        <img className="u-img-responsive" src={this.props.image} />
+        <div className="hero-image" style={{ backgroundImage: `url(${this.props.image})` }}></div>
         <div className="hero-metadata u-text-center">
           <h2>
-            <span className="u-text-uppercase">{this.props.groom}</span>
-            <span>{this.props.icon}</span>
-            <span className="u-text-uppercase">{this.props.bride}</span>
+            <span className="hero-metadata_intro">The Wedding Celebration of</span>
+            <span className="hero-metadata_name u-text-uppercase">{this.props.groom}</span>
+            <span className="hero-metadata_icon icon-heart">{this.props.icon}</span>
+            <span className="hero-metadata_name u-text-uppercase">{this.props.bride}</span>
           </h2>
-          <p>{this.props.location}</p>
-          <p>{this.props.date}</p>
+          <p className="hero-metadata_text hero-metadata_location u-text-uppercase">{this.props.location}</p>
+          <p className="hero-metadata_text hero-metadata_date">{this.props.date}</p>
         </div>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
-          <polygon fill="#f5f5f1" points="0,100 50,0 100,100" />
+        <svg className="hero-skew" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+          <polygon fill="#f5f5f1" points="0, 100 50, 0 100, 100"></polygon>
         </svg>
+
       </section>
     )
   }

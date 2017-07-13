@@ -25,11 +25,12 @@ const Home = () => {
   return (
     <section className="content">
       <Hero
-        image="http://placehold.it/960x750?text=Hero+Image"
+        image="http://lorempixel.com/960/800/nature/4"
         groom={config.groom.firstName}
         bride={config.bride.firstName}
         location={config.venue.name}
         date={config.weddingDate}
+        icon="💘"
       />
 
       <Markdown

@@ -2,20 +2,80 @@
   position: relative;
   z-index: 1;
 
-  .hero-metadata {
-    position: absolute;
-    z-index: 1;
-    top: 0;
-    padding-top: 25%;
-    width: 100%;
-    height: 100%;
+  &-image {
+    height: 55vh;
+    background-position: bottom center;
+    background-size: cover;
   }
 
-  svg {
+  &-skew {
     position: absolute;
     z-index: 1;
     bottom: 0;
     width: 100%;
     height: 5vh;
+  }
+}
+
+.hero-metadata {
+  position: absolute;
+  z-index: 1;
+  top: 10%;
+  padding-top: 60px;
+  width: 100%;
+  height: 100%;
+  color: $true-white;
+
+  @include breakpoint(medium) {
+    padding-top: 80px;
+  }
+
+  &_intro {
+    display: block;
+    margin-bottom: 12px;
+    font-family: $script-font-family;
+    font-size: $h3-font-size;
+    font-style: italic;
+    letter-spacing: $script-letter-spacing;
+  }
+
+  &_name {
+    position: relative;
+    z-index: 1;
+    letter-spacing: normal;
+
+    &:before,
+    &:after {
+      position: absolute;
+      z-index: 1;
+      width: 100%;
+      height: 1px;
+      background-color: rgba($true-white, 0.25);
+      content: '';
+    }
+
+    &:after {
+      bottom: 0;
+      left: 0;
+    }
+  }
+
+  &_icon {
+    padding: 0 8px;
+  }
+
+  &_text {
+    margin-bottom: 0;
+  }
+
+  &_location {
+    font-family: $light-font-family;
+    font-weight: $light-font-weight;
+  }
+
+  &_date {
+    color: rgba($true-white, 0.85);
+    font-size: $small-font-size;
+    font-weight: $light-font-weight;
   }
 }
