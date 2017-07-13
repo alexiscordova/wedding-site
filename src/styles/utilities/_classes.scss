@@ -13,6 +13,30 @@
   text-align: center;
 }
 
+.u-text-center-small {
+  text-align: center;
+
+  @include breakpoint(medium) {
+    text-align: inherit;
+  }
+}
+
+.u-text-center-medium {
+  @include breakpoint(medium) {
+    text-align: center;
+  }
+
+  @include breakpoint(large) {
+    text-align: inherit;
+  }
+}
+
+.u-text-center-large {
+  @include breakpoint(large) {
+    text-align: center;
+  }
+}
+
 .u-text-uppercase {
   text-transform: uppercase;
 }
@@ -43,22 +67,23 @@
 
 // Hide an element on medium breakpoint
 .u-is-hidden-medium {
-  display: inherit !important;
-
   @include breakpoint(medium) {
     display: none !important;
+  }
+
+  @include breakpoint(large) {
+    display: inherit !important;
   }
 }
 
 // Hide an element on large breakpoint
 .u-is-hidden-large {
-  display: inherit !important;
-
   @include breakpoint(large) {
     display: none !important;
   }
 }
 
+// Responsive block images
 .u-img-responsive {
   display: block;
   width: 100%;
