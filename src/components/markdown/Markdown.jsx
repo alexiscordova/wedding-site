@@ -15,10 +15,10 @@ class Markdown extends Component {
   constructor(props) {
     super(props)
 
-    const parser = new Parser()
-    const renderer = new HtmlRenderer({
-      softbreak: '<br />'
-    })
+    const parser = new Parser(),
+      renderer = new HtmlRenderer({
+        softbreak: '<br />'
+      })
 
     this.markdown = renderer.render(parser.parse(this.props.text))
   }
