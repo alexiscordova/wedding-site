@@ -11,13 +11,15 @@ class Editorial extends Component {
     ]),
     classes: PropTypes.string,
     layout: PropTypes.string.isRequired,
-    content: PropTypes.array.isRequired
+    content: PropTypes.array.isRequired,
+    id: PropTypes.string
   }
 
   static defaultProps = {
     sectionTitle: '',
     introduction: undefined,
-    classes: null
+    classes: null,
+    id: ''
   }
 
   editorialMetadata(item) {
@@ -35,12 +37,13 @@ class Editorial extends Component {
       introduction,
       layout,
       content,
-      classes
+      classes,
+      id
     } = this.props,
       editorialClasses = classNames('editorial', classes)
 
     return (
-      <section className={editorialClasses}>
+      <section className={editorialClasses} id={id}>
         { sectionTitle.length > 0 &&
           <div className="row u-container u-block-center">
             <div className="column-small-12">

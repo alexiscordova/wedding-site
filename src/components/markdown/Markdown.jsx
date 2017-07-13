@@ -4,7 +4,12 @@ import { HtmlRenderer, Parser } from 'commonmark'
 
 class Markdown extends Component {
   static propTypes = {
-    text: PropTypes.string.isRequired
+    text: PropTypes.string.isRequired,
+    id: PropTypes.string
+  }
+
+  static defaultProps = {
+    id: ''
   }
 
   constructor(props) {
@@ -20,7 +25,7 @@ class Markdown extends Component {
 
   render() {
     return (
-      <section className="markdown">
+      <section className="markdown" id={this.props.id}>
         <div className="row u-container u-block-center">
           <div className="column-small-12">
             <div

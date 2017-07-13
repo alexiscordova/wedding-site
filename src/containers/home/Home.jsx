@@ -37,6 +37,7 @@ const Home = () => {
       />
 
       <Editorial
+        id="event-details"
         sectionTitle="Wedding Details"
         layout="3-up"
         introduction={eventDetails}
@@ -49,10 +50,12 @@ const Home = () => {
       />
 
       <Markdown
+        id="accomodations"
         text={travelAndAccomodationsText}
       />
 
       <Editorial
+        id="registry"
         sectionTitle="Gift Registry"
         layout="3-up"
         content={registryData}
