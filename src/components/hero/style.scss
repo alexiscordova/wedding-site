@@ -9,11 +9,16 @@
   }
 
   &-skew {
-    position: absolute;
-    z-index: 1;
-    bottom: 0;
-    width: 100%;
-    height: 5vh;
+    display: none;
+
+    @include breakpoint(medium) {
+      position: absolute;
+      z-index: 1;
+      display: block;
+      bottom: 0;
+      width: 100%;
+      height: 5vh;
+    }
   }
 }
 
