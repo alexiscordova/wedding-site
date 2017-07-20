@@ -11,7 +11,7 @@ const GoogleMap = () => {
             height="250"
             frameBorder="0"
             style={{ border: 0 }}
-            src="https://www.google.com/maps/embed/v1/place?q=Golden%20Gate%20Club&key=AIzaSyDhgCvJjiUZCBP6rha_XyofHqDZVKpqYlE&zoom=16"
+            src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJJ3GBHNmGhYAR6o66JhtG_38&key=AIzaSyDhgCvJjiUZCBP6rha_XyofHqDZVKpqYlE&zoom=16"
             allowFullScreen
           />
         </div>
