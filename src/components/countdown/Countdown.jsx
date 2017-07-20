@@ -1,11 +1,17 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
+import classNames from 'classnames'
 import './style.scss'
 
 class Countdown extends Component {
   static propTypes = {
-    title: PropTypes.string.isRequired,
-    weddingDate: PropTypes.string.isRequired
+    headline: PropTypes.string.isRequired,
+    weddingDate: PropTypes.string.isRequired,
+    headlineClasses: PropTypes.arrayOf(PropTypes.string)
+  }
+
+  static defaultProps = {
+    headlineClasses: null
   }
 
   constructor(props) {
@@ -22,10 +28,10 @@ class Countdown extends Component {
       secondsRemainingLabel: ''
     }
 
-    this.setCounter()
+    this._setCounter()
   }
 
-  setCounter() {
+  _setCounter() {
     let timer = setInterval(() => {
       let second = 1000,
         minute = second * 60,
@@ -70,42 +76,43 @@ class Countdown extends Component {
       minutesRemainingLabel,
       secondsRemaining,
       secondsRemainingLabel
-    } = this.state
+    } = this.state,
+      headlineClasses = classNames('countdown-headline', this.props.headlineClasses)
 
     return (
       <section className="countdown">
         <div className="row u-container u-block-center">
           <div className="column-small-12">
-            <h3>{this.props.title}</h3>
+            <h3 className={headlineClasses}>{this.props.headline}</h3>
           </div>
         </div>
 
         <div className="row u-container u-block-center">
-          <div className="column-small-12 column-medium-3">
-            <div className="days-remaining">
-              <span>{daysRemaining}</span>
-              <span>{daysRemainingLabel}</span>
+          <div className="column-small-3">
+            <div className="days-container">
+              <span className="time-remaining">{daysRemaining}</span>
+              <span className="time-remaining-label">{daysRemainingLabel}</span>
             </div>
           </div>
 
-          <div className="column-small-12 column-medium-3">
-            <div className="hours-remaining">
-              <span>{hoursRemaining}</span>
-              <span>{hoursRemainingLabel}</span>
+          <div className="column-small-3">
+            <div className="hours-container">
+              <span className="time-remaining">{hoursRemaining}</span>
+              <span className="time-remaining-label">{hoursRemainingLabel}</span>
             </div>
           </div>
 
-          <div className="column-small-12 column-medium-3">
-            <div className="minutes-remaining">
-              <span>{minutesRemaining}</span>
-              <span>{minutesRemainingLabel}</span>
+          <div className="column-small-3">
+            <div className="minutes-container">
+              <span className="time-remaining">{minutesRemaining}</span>
+              <span className="time-remaining-label">{minutesRemainingLabel}</span>
             </div>
           </div>
 
-          <div className="column-small-12 column-medium-3">
-            <div className="seconds-remaining">
-              <span>{secondsRemaining}</span>
-              <span>{secondsRemainingLabel}</span>
+          <div className="column-small-3">
+            <div className="seconds-container">
+              <span className="time-remaining">{secondsRemaining}</span>
+              <span className="time-remaining-label">{secondsRemainingLabel}</span>
             </div>
           </div>
         </div>

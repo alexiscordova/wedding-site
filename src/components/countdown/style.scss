@@ -1,4 +1,28 @@
 .countdown {
-  position: relative;
-  z-index: 1;
+  &-headline {
+    position: relative;
+    z-index: 1;
+  }
+
+  [class$="-container"] {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  [class$="-remaining"] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    width: 60px;
+    height: 60px;
+    font-size: $h3-font-size;
+    background-color: $true-white;
+  }
+
+  [class$="-remaining-label"] {
+    font-size: $small-font-size;
+  }
 }

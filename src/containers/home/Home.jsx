@@ -48,7 +48,8 @@ const Home = () => {
       />
 
       <Countdown
-        title="Countdown"
+        headline="Countdown"
+        headlineClasses={['u-text-center']}
         weddingDate="04/21/2018 4:30 PM"
       />
 
