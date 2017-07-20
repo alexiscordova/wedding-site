@@ -1,0 +1,30 @@
+.editorial {
+  &-heading {
+    position: relative;
+    z-index: 1;
+  }
+
+  &-link {
+    display: block;
+  }
+
+  &-image {
+    max-width: 100%;
+  }
+
+  &-content-item {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  // Editorial-only utility classes
+  &.editorial-content-centered {
+    address {
+      text-align: center;
+    }
+
+    .editorial-content-item {
+      text-align: center;
+    }
+  }
+}

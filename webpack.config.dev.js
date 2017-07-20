@@ -10,7 +10,8 @@ module.exports = {
     alias: {
       Containers: path.resolve(__dirname, 'src/containers'),
       Components: path.resolve(__dirname, 'src/components'),
-      Data: path.resolve(__dirname, 'src/data')
+      Data: path.resolve(__dirname, 'src/data'),
+      Images: path.resolve(__dirname, 'src/assets/images')
     }
   },
   devtool: 'inline-source-map',

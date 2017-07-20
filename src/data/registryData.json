@@ -1,27 +1,27 @@
 [
   {
     "name": "Amazon",
-    "image": "https://static.xoedge.com/xo-registry/retailer/retailerImage6d8a21e8-a904-471f-a6f5-371b3af2a2e5.png",
+    "image": "amazon.png",
     "href": "https://track-registry.theknot.com/track/view?a=994&lt=RetailerGVR&r=722691941&rt=14020&sp=Logo&ss=LinkedRegistries&st=RegistryProfile"
   },
   {
     "name": "Target",
-    "image": "https://static.xoedge.com/xo-registry/retailer/retailerImage650c66df-7537-4086-b10d-b6a87c308197.png",
+    "image": "target.png",
     "href": "https://track-registry.theknot.com/track/view?a=994&lt=RetailerGVR&r=723041545&rt=12160&sp=Logo&ss=LinkedRegistries&st=RegistryProfile"
   },
   {
     "name": "Crate & Barrel",
-    "image": "https://static.xoedge.com/xo-registry/retailer/retailerImagec803ff67-f12c-41a1-991d-08bb169fe3ee.png",
+    "image": "crate-barrel.png",
     "href": "https://track-registry.theknot.com/track/view?a=994&lt=RetailerGVR&r=723039374&rt=10074&sp=Logo&ss=LinkedRegistries&st=RegistryProfile"
   },
   {
     "name": "West Elm",
-    "image": "https://static.xoedge.com/xo-registry/retailer/retailerImage99d9144a-e4ca-4ce6-a055-9ab9099911a9.png",
+    "image": "west-elm.png",
     "href": "https://track-registry.theknot.com/track/view?a=994&lt=RetailerGVR&r=723078907&rt=14780&sp=Logo&ss=LinkedRegistries&st=RegistryProfile"
   },
   {
     "name": "The Knot Newlywed Fund",
-    "image": "https://static.xoedge.com/xo-registry/retailer/logo/20170526162450388-TK-NewlywedFund-Logo_Final_TM.png",
+    "image": "newlywed-fund.png",
     "href": "https://registry.theknot.com/alexis-cordova-krystle-mariano-april-2018-ca/20806176"
   }
 ]

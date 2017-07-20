@@ -39,7 +39,9 @@ const Home = () => {
 
       <Editorial
         id="event-details"
-        sectionTitle="Wedding Details"
+        heading="Wedding Details"
+        headingClasses={['u-text-center']}
+        classes={['editorial-content-centered']}
         layout="3-up"
         introduction={eventDetails}
         content={weddingEventDetails}
@@ -52,13 +54,16 @@ const Home = () => {
 
       <Markdown
         id="accomodations"
+        heading="Travel and Accomodations"
+        headingClasses={['u-text-center']}
         text={travelAndAccomodationsText}
       />
 
       <Editorial
         id="registry"
-        sectionTitle="Gift Registry"
-        layout="3-up"
+        heading="Gift Registry"
+        headingClasses={['u-text-center']}
+        layout="2-up"
         content={registryData}
       />
 
