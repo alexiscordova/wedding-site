@@ -11,7 +11,7 @@
   "homepage": "http://itsacelebrationbitches.life",
   "repository": {
     "type": "git",
-    "url": null
+    "url": "git@github.com:alexiscordova/wedding-site.git"
   },
   "private": true,
   "license": "MIT",
