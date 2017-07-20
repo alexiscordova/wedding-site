@@ -3,9 +3,13 @@
   z-index: 1;
 
   &-image {
-    height: 55vh;
+    height: 80vh;
     background-position: bottom center;
     background-size: cover;
+
+    @include breakpoint(medium) {
+      height: 55vh;
+    }
   }
 
   &-skew {
