@@ -64,6 +64,7 @@ const Home = () => {
         id="registry"
         heading="Gift Registry"
         headingClasses={['u-text-center']}
+        classes={['editorial-content-centered']}
         layout="2-up"
         introduction="You can view our registries by clicking each of the store logos below, or by looking up Alexis Córdova or Krystle Mariano at your local store. You can also help us plan for our honeymoon with the Newlywed Fund."
         content={registryData}
