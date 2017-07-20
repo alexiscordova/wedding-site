@@ -6,14 +6,18 @@ import './style.scss'
 
 class Editorial extends Component {
   static propTypes = {
+    layout: PropTypes.string.isRequired,
+    content: PropTypes.arrayOf(PropTypes.shape({
+      title: PropTypes.string,
+      image: PropTypes.string,
+      text: PropTypes.string
+    })).isRequired,
     heading: PropTypes.string,
     introduction: PropTypes.oneOfType([
       PropTypes.func,
       PropTypes.string
     ]),
     classes: PropTypes.arrayOf(PropTypes.string),
-    layout: PropTypes.string.isRequired,
-    content: PropTypes.array.isRequired,
     id: PropTypes.string,
     headingClasses: PropTypes.arrayOf(PropTypes.string)
   }
@@ -37,7 +41,7 @@ class Editorial extends Component {
     }
   }
 
-  editorialContent(item, index, columnClasses) {
+  _editorialContent(item, index, columnClasses) {
     const { href, image, text } = item,
       contentClasses = classNames(columnClasses, 'editorial-content-item')
 
@@ -47,20 +51,20 @@ class Editorial extends Component {
           <figure>
             <a className="editorial-link" href={href}>
               <img className="editorial-image" src={require(`Images/${image}`)} />
-              { text && this.editorialMetadata(item) }
+              { text && this._editorialMetadata(item) }
             </a>
           </figure>
         ) : (
           <figure>
             <img className="editorial-image" src={image} />
-            { text && this.editorialMetadata(item) }
+            { text && this._editorialMetadata(item) }
           </figure>
         )}
       </div>
     )
   }
 
-  editorialMetadata(item) {
+  _editorialMetadata(item) {
     const { title, text } = item
 
     return (
@@ -91,7 +95,7 @@ class Editorial extends Component {
               <h3 className={headingClasses}>{heading}</h3>
             </div>
             { introduction &&
-              <div className="column-small-12">
+              <div className="editorial-introduction column-small-12">
                 { typeof introduction === 'function' && introduction() }
                 { typeof introduction === 'string' &&
                   <div
@@ -106,13 +110,13 @@ class Editorial extends Component {
         <div className="row editorial-content u-container u-block-center">
           { layout === '3-up' &&
             content.map((item, index) => {
-              return this.editorialContent(item, index, 'column-small-12 column-medium-4')
+              return this._editorialContent(item, index, 'column-small-12 column-medium-4')
             })
           }
 
           { layout === '2-up' &&
             content.map((item, index) => {
-              return this.editorialContent(item, index, 'column-small-12 column-medium-6')
+              return this._editorialContent(item, index, 'column-small-12 column-medium-6')
             })
           }
         </div>
