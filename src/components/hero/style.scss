@@ -20,14 +20,12 @@
 .hero-metadata {
   position: absolute;
   z-index: 1;
-  top: 10%;
-  padding-top: 60px;
+  top: calc(20% + 60px);
   width: 100%;
-  height: 100%;
   color: $true-white;
 
   @include breakpoint(medium) {
-    padding-top: 80px;
+    top: calc(20% + 80px);
   }
 
   &_intro {
