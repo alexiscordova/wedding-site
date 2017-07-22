@@ -2,26 +2,31 @@
   {
     "name": "Amazon",
     "image": "amazon.png",
+    "imageRetina": "amazon_2x.png",
     "href": "https://track-registry.theknot.com/track/view?a=994&lt=RetailerGVR&r=722691941&rt=14020&sp=Logo&ss=LinkedRegistries&st=RegistryProfile"
   },
   {
     "name": "Target",
     "image": "target.png",
+    "imageRetina": "target_2x.png",
     "href": "https://track-registry.theknot.com/track/view?a=994&lt=RetailerGVR&r=723041545&rt=12160&sp=Logo&ss=LinkedRegistries&st=RegistryProfile"
   },
   {
     "name": "Crate & Barrel",
     "image": "crate-barrel.png",
+    "imageRetina": "crate-barrel_2x.png",
     "href": "https://track-registry.theknot.com/track/view?a=994&lt=RetailerGVR&r=723039374&rt=10074&sp=Logo&ss=LinkedRegistries&st=RegistryProfile"
   },
   {
     "name": "West Elm",
     "image": "west-elm.png",
+    "imageRetina": "west-elm_2x.png",
     "href": "https://track-registry.theknot.com/track/view?a=994&lt=RetailerGVR&r=723078907&rt=14780&sp=Logo&ss=LinkedRegistries&st=RegistryProfile"
   },
   {
     "name": "The Knot Newlywed Fund",
     "image": "newlywed-fund.png",
+    "imageRetina": "newlywed-fund_2x.png",
     "href": "https://registry.theknot.com/alexis-cordova-krystle-mariano-april-2018-ca/20806176"
   }
 ]
