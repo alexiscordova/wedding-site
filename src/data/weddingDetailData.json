@@ -3,18 +3,21 @@
     "title": "Ceremony 4:30 PM",
     "image": "icon-ceremony.png",
     "imageRetina": "icon-ceremony_2x.png",
+    "alt": "Interlocked rings for the wedding ceremony",
     "text": "Lorem ipsum dolor amet."
   },
   {
     "title": "Cocktails 5:00 PM",
     "image": "icon-cocktails.png",
     "imageRetina": "icon-cocktails_2x.png",
+    "alt": "Champagne glasses toasting for cocktail hour",
     "text": "Lorem ipsum dolor amet."
   },
   {
     "title": "Reception 6:00 PM",
     "image": "icon-reception.png",
     "imageRetina": "icon-reception_2x.png",
+    "alt": "Crossed fork and knife for the dinner and reception",
     "text": "Lorem ipsum dolor amet."
   }
 ]
