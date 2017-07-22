@@ -1,17 +1,20 @@
 [
   {
     "title": "Ceremony 4:30 PM",
-    "image": "http://placehold.it/100?text=Icon",
+    "image": "icon-ceremony.png",
+    "imageRetina": "icon-ceremony_2x.png",
     "text": "Lorem ipsum dolor amet."
   },
   {
     "title": "Cocktails 5:00 PM",
-    "image": "http://placehold.it/100?text=Icon",
+    "image": "icon-cocktails.png",
+    "imageRetina": "icon-cocktails_2x.png",
     "text": "Lorem ipsum dolor amet."
   },
   {
     "title": "Reception 6:00 PM",
-    "image": "http://placehold.it/100?text=Icon",
+    "image": "icon-reception.png",
+    "imageRetina": "icon-reception_2x.png",
     "text": "Lorem ipsum dolor amet."
   }
 ]
