@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import classNames from 'classnames'
 import { HtmlRenderer, Parser } from 'commonmark'
+import Image from 'Components/image/Image'
 import './style.scss'
 
 class Editorial extends Component {
@@ -42,7 +43,7 @@ class Editorial extends Component {
   }
 
   _editorialContent(item, index, columnClasses) {
-    const { href, image, text } = item,
+    const { href, image, imageRetina, text, alt } = item,
       contentClasses = classNames(columnClasses, 'editorial-content-item')
 
     return (
@@ -50,13 +51,23 @@ class Editorial extends Component {
         { href ? (
           <figure>
             <a className="editorial-link" href={href}>
-              <img className="editorial-image" src={require(`Images/${image}`)} />
+              <Image
+                classes={['editorial-image']}
+                image={require(`Images/${image}`)}
+                imageRetina={require(`Images/${imageRetina}`)}
+                alt={alt}
+              />
               { text && this._editorialMetadata(item) }
             </a>
           </figure>
         ) : (
           <figure>
-            <img className="editorial-image" src={image} />
+            <Image
+              classes={['editorial-image']}
+              image={require(`Images/${image}`)}
+              imageRetina={require(`Images/${imageRetina}`)}
+              alt={alt}
+            />
             { text && this._editorialMetadata(item) }
           </figure>
         )}
