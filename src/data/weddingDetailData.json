@@ -4,20 +4,20 @@
     "image": "icon-ceremony.png",
     "imageRetina": "icon-ceremony_2x.png",
     "alt": "Interlocked rings for the wedding ceremony",
-    "text": "Lorem ipsum dolor amet."
+    "text": "The ceremony will begin promptly at 4:30 PM in the front courtyard of the Golden Gate Club. Don't be late!"
   },
   {
     "title": "Cocktails 5:00 PM",
     "image": "icon-cocktails.png",
     "imageRetina": "icon-cocktails_2x.png",
     "alt": "Champagne glasses toasting for cocktail hour",
-    "text": "Lorem ipsum dolor amet."
+    "text": "Cocktail hour will follow the ceremony, both outside in the front courtyard and in the adjacent Hawthorn Room."
   },
   {
     "title": "Reception 6:00 PM",
     "image": "icon-reception.png",
     "imageRetina": "icon-reception_2x.png",
     "alt": "Crossed fork and knife for the dinner and reception",
-    "text": "Lorem ipsum dolor amet."
+    "text": "Dinner will be served at about 6:00 PM in the Ventana Room, with dancing, drinks, and fun to follow!"
   }
 ]
