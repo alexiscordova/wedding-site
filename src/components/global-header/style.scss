@@ -23,6 +23,10 @@
       width: 60px;
       height: 60px;
     }
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 }
 
@@ -67,6 +71,11 @@
     &:hover {
       color: $true-white;
       text-shadow: 0 1px 3px rgba($true-white, 0.15);
+      cursor: pointer;
+    }
+
+    &.is-active {
+      color: $true-white;
     }
   }
 }
