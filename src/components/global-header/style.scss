@@ -17,7 +17,7 @@
   &-logo {
     width: 40px;
     height: 40px;
-    fill: rgba($true-white, 0.9);
+    fill: rgba($true-white, 0.85);
 
     @include breakpoint(medium) {
       width: 60px;
