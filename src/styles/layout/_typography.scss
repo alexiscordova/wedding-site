@@ -90,6 +90,10 @@ li {
 address {
   font-style: normal;
   font-size: $text-font-size;
+
+  & > * {
+    display: block;
+  }
 }
 
 // Utility Classes

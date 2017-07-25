@@ -13,10 +13,10 @@ import registryData from 'Data/registryData'
 let eventDetails = () => {
   return (
     <address>
-      {config.venue.name} {config.venue.nameAdditional}<br />
-      {config.venue.address}<br />
-      {config.venue.city}, {config.venue.state}<br />
-      {config.venue.zip}
+      <span className="u-text-bold">{config.venue.name} {config.venue.nameAdditional}</span>
+      <span>{config.venue.address}</span>
+      <span>{config.venue.city}, {config.venue.state}</span>
+      <span>{config.venue.zip}</span>
     </address>
   )
 }
