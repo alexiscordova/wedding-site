@@ -9,12 +9,12 @@
   font-family: $light-font-family;
   background-color: rgba($true-black, 0.45);
 
-  .header-wrapper {
+  &-wrapper {
     display: flex;
     align-items: center;
   }
 
-  .header-logo {
+  &-logo {
     width: 40px;
     height: 40px;
     fill: rgba($true-white, 0.9);
