@@ -1,4 +1,4 @@
-.editorial {
+.markdown {
   &-heading {
     position: relative;
     z-index: 1;
@@ -32,39 +32,6 @@
       width: 30px;
       height: 6px;
       background-color: $cerulean;
-    }
-  }
-
-  &-link {
-    display: block;
-  }
-
-  &-image {
-    max-width: 100%;
-    min-width: 100px;
-  }
-
-  &-content {
-    margin-top: 25px;
-  }
-
-  &-content-item {
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-
-  &-metadata {
-    margin-top: 15px;
-  }
-
-  // Editorial-only utility classes
-  &.editorial-content-centered {
-    address {
-      text-align: center;
-    }
-
-    .editorial-content-item {
-      text-align: center;
     }
   }
 }

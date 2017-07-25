@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import classNames from 'classnames'
 import { HtmlRenderer, Parser } from 'commonmark'
+import './style.scss'
 
 class Markdown extends Component {
   static propTypes = {
