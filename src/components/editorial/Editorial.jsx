@@ -80,7 +80,7 @@ class Editorial extends Component {
 
     return (
       <figcaption className="editorial-metadata">
-        { title && <h4 className="editorial-metadata_title">{title}</h4> }
+        { title && <h4 className="editorial-metadata_title u-text-bold">{title}</h4> }
         <p className="editorial-metadata_text">{text}</p>
       </figcaption>
     )
