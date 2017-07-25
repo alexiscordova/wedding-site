@@ -77,7 +77,7 @@ class Countdown extends Component {
       secondsRemaining,
       secondsRemainingLabel
     } = this.state,
-      headlineClasses = classNames('countdown-headline', this.props.headlineClasses)
+      headlineClasses = classNames('countdown-heading', this.props.headlineClasses)
 
     return (
       <section className="countdown">
@@ -87,7 +87,7 @@ class Countdown extends Component {
           </div>
         </div>
 
-        <div className="row u-container u-block-center">
+        <div className="row countdown-container u-container u-block-center">
           <div className="column-small-3">
             <div className="days-container">
               <span className="time-remaining">{daysRemaining}</span>
