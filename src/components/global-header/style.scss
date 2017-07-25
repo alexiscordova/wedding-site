@@ -44,12 +44,12 @@
       background-color: rgba($true-white, 0.25);
 
       @include breakpoint(medium) {
-        right: -3vw;
+        right: -2vw;
         content: '';
       }
 
       @include breakpoint(large) {
-        right: -4vw;
+        right: -2.5vw;
         content: '';
       }
     }
