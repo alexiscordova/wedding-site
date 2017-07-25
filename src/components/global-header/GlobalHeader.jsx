@@ -5,7 +5,7 @@ const GlobalHeader = () => {
   return (
     <header className="header">
       <div className="row u-container u-block-center header-wrapper">
-        <div className="column-small-2 column-medium-3">
+        <div className="column-small-2 column-medium-1">
           <a href="#">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -17,7 +17,7 @@ const GlobalHeader = () => {
           </a>
         </div>
 
-        <div className="column-small-10 column-medium-offset-2 column-medium-7">
+        <div className="column-small-10 column-medium-offset-5 column-medium-6">
           <nav className="header-navigation">
             <ul className="u-list-unstyled" role="navigation">
               <li className="header-navigation_item">
