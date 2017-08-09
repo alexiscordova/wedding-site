@@ -108,7 +108,6 @@ module.exports = {
         NODE_ENV: JSON.stringify('production')
       }
     }),
-    new WebpackMd5Hash(),
     new SvgStore({
       prefix: ''
     }),
