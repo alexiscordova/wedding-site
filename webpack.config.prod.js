@@ -10,7 +10,9 @@ module.exports = {
     extensions: ['*', '.js', '.jsx', '.json', '.md'],
     alias: {
       Containers: path.resolve(__dirname, 'src/containers'),
-      Components: path.resolve(__dirname, 'src/components')
+      Components: path.resolve(__dirname, 'src/components'),
+      Data: path.resolve(__dirname, 'src/data'),
+      Images: path.resolve(__dirname, 'src/assets/images')
     }
   },
   devtool: 'cheap-module-source-map',
