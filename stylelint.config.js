@@ -1,5 +1,10 @@
 module.exports = {
-  'extends': 'stylelint-config-standard',
+  'extends': [
+    'stylelint-config-standard'
+  ],
+  'plugins': [
+    'stylelint-scss'
+  ],
   'rules': {
     'selector-pseudo-element-colon-notation': null,
     'number-no-trailing-zeros': null,
