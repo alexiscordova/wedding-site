@@ -90,6 +90,7 @@ li {
 address {
   font-style: normal;
   font-size: $text-font-size;
+  line-height: $base-line-height;
 
   & > * {
     display: block;
