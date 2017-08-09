@@ -2,6 +2,8 @@
   "root": true,
   "extends": [
     "standard",
+    "plugin:import/errors",
+    "plugin:import/warnings",
     "plugin:react/recommended"
   ],
   "plugins": [
@@ -22,12 +24,23 @@
     "browser": true,
     "node": true
   },
+  "settings": {
+    "import/resolver": {
+      "webpack": {
+        "config": "webpack.config.dev.js"
+      }
+    }
+  },
   "rules": {
     "no-var": "error",
     "no-unused-vars": "error",
     "one-var": ["error", "always"],
     "object-curly-spacing": ["error", "always"],
     "space-before-function-paren": ["error", "never"],
+    "import/no-unresolved": [2, {
+      "commonjs": true,
+      "amd": true
+    }],
     "react/no-unused-prop-types": "error",
     "react/prefer-es6-class": "error",
     "react/prefer-stateless-function": 1,
