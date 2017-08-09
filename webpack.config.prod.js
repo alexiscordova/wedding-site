@@ -62,6 +62,13 @@ module.exports = {
         })
       },
       {
+        test: /\.md$/,
+        use: [
+          'html-loader',
+          'markdown-loader'
+        ]
+      },
+      {
         test: /\.(gif|jpe?g|png|svg)$/,
         exclude: /node_modules/,
         use: [
