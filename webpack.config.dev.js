@@ -1,8 +1,8 @@
-const webpack = require('webpack')
-const path = require('path')
-const HtmlWebpackPlugin = require('html-webpack-plugin')
-const SvgStore = require('webpack-svgstore-plugin')
-const StyleLintPlugin = require('stylelint-webpack-plugin')
+const webpack = require('webpack'),
+  path = require('path'),
+  HtmlWebpackPlugin = require('html-webpack-plugin'),
+  SvgStore = require('webpack-svgstore-plugin'),
+  StyleLintPlugin = require('stylelint-webpack-plugin')
 
 module.exports = {
   resolve: {

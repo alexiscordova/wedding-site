@@ -1,10 +1,9 @@
-const webpack = require('webpack')
-const path = require('path')
-const HtmlWebpackPlugin = require('html-webpack-plugin')
-const ExtractTextPlugin = require('extract-text-webpack-plugin')
-const SvgStore = require('webpack-svgstore-plugin')
-const StyleLintPlugin = require('stylelint-webpack-plugin')
-const WebpackMd5Hash = require('webpack-md5-hash')
+const webpack = require('webpack'),
+  path = require('path'),
+  HtmlWebpackPlugin = require('html-webpack-plugin'),
+  ExtractTextPlugin = require('extract-text-webpack-plugin'),
+  SvgStore = require('webpack-svgstore-plugin'),
+  StyleLintPlugin = require('stylelint-webpack-plugin')
 
 module.exports = {
   resolve: {

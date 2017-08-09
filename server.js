@@ -1,16 +1,16 @@
 /* eslint-disable no-console */
-const express = require('express')
-const webpack = require('webpack')
-const compression = require('compression')
-const open = require('open')
-const host = 'http://localhost'
-const port = 3000
-const app = express()
-const environment = app.get('env')
+const express = require('express'),
+  webpack = require('webpack'),
+  compression = require('compression'),
+  open = require('open'),
+  host = 'http://localhost',
+  port = 3000,
+  app = express(),
+  environment = app.get('env')
 
 if (environment === 'development') {
-  const config = require('./webpack.config.dev')
-  const compiler = webpack(config)
+  const config = require('./webpack.config.dev'),
+    compiler = webpack(config)
 
   app.use(require('webpack-dev-middleware')(compiler, {
     noInfo: true,
