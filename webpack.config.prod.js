@@ -52,9 +52,9 @@ module.exports = {
               loader: 'sass-resources-loader',
               options: {
                 resources: [
-                  'src/styles/base/_colors.scss',
+                  'src/styles/utilities/_mixins.scss',
                   'src/styles/base/_type-setting.scss',
-                  'src/styles/utilities/_mixins.scss'
+                  'src/styles/base/_colors.scss'
                 ]
               }
             }
