@@ -7,7 +7,7 @@ const webpack = require('webpack'),
 
 module.exports = {
   resolve: {
-    extensions: ['*', '.js', '.jsx'],
+    extensions: ['*', '.js', '.jsx', '.json', '.md'],
     alias: {
       Containers: path.resolve(__dirname, 'src/containers'),
       Components: path.resolve(__dirname, 'src/components')
