@@ -20,7 +20,7 @@
   "private": true,
   "license": "MIT",
   "browserslist": [
-    ">= 1% in US",
+    ">1% in US",
     "ie >= 10"
   ],
   "dependencies": {
