@@ -8,10 +8,17 @@
   width: 100%;
   font-family: $light-font-family;
   background-color: rgba($true-black, 0.45);
+  border-bottom: 1px solid rgba($true-black, 0.2);
 
   &-wrapper {
     display: flex;
     align-items: center;
+  }
+
+  &-shadow {
+    transition: background-color 0.3s ease-in;
+    background-color: rgba($true-black, 0.55);
+    box-shadow: -1px 2px 8px rgba($true-black, 0.75);
   }
 
   &-logo {

@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import classNames from 'classnames'
 import Scroll from 'react-scroll'
 import './style.scss'
 
@@ -13,17 +14,35 @@ class GlobalHeader extends Component {
   constructor(props) {
     super(props)
 
+    this.state = {
+      shouldShowShadow: false
+    }
+
     this.scrollToTop = this.scrollToTop.bind(this)
+    this.toggleShadow = this.toggleShadow.bind(this)
   }
 
   componentDidMount() {
-    Events.scrollEvent.register('begin')
-    Events.scrollEvent.register('end')
+    window.addEventListener('scroll', () => {
+      window.scrollY >= 500 ? this.toggleShadow(true) : this.toggleShadow()
+    })
+
+    Events.scrollEvent.register('begin', (to, element) => {
+      if (window.scrollY >= 500) {
+        this.toggleShadow(true)
+      }
+    })
+    Events.scrollEvent.register('end', (to, element) => {
+      if (window.scrollY === 0) {
+        this.toggleShadow()
+      }
+    })
 
     scrollSpy.update()
   }
 
   componentWillUnmount() {
+    window.removeEventListener('scroll')
     Events.scrollEvent.remove('begin')
     Events.scrollEvent.remove('end')
   }
@@ -32,15 +51,24 @@ class GlobalHeader extends Component {
     scroll.scrollToTop()
   }
 
+  toggleShadow(bool = false) {
+    this.setState({
+      shouldShowShadow: bool
+    })
+  }
+
   render() {
     const scrollOptions = {
-      spy: false,
-      smooth: true,
-      offset: -100
-    }
+        spy: false,
+        smooth: true,
+        offset: -150
+      },
+      classes = classNames('header', {
+        'header-shadow': this.state.shouldShowShadow
+      })
 
     return (
-      <header className="header">
+      <header className={classes}>
         <div className="row u-container u-block-center header-wrapper">
           <div className="column-small-2 column-medium-1">
             <a onClick={this.scrollToTop}>
