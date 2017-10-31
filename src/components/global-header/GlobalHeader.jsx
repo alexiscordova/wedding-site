@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import ReactGA from 'react-ga'
 import classNames from 'classnames'
 import Scroll from 'react-scroll'
 import './style.scss'
@@ -20,6 +21,7 @@ class GlobalHeader extends Component {
 
     this.scrollToTop = this.scrollToTop.bind(this)
     this.toggleShadow = this.toggleShadow.bind(this)
+    this.sendAnalyticsEvent = this.sendAnalyticsEvent.bind(this)
   }
 
   componentDidMount() {
@@ -47,13 +49,22 @@ class GlobalHeader extends Component {
     Events.scrollEvent.remove('end')
   }
 
-  scrollToTop(options) {
+  scrollToTop(e) {
+    this.sendAnalyticsEvent(e)
     scroll.scrollToTop()
   }
 
   toggleShadow(bool = false) {
     this.setState({
       shouldShowShadow: bool
+    })
+  }
+
+  sendAnalyticsEvent(e) {
+    ReactGA.event({
+      category: 'Navigation',
+      action: e.type,
+      label: e.target.innerText || 'Logo'
     })
   }
 
@@ -89,6 +100,8 @@ class GlobalHeader extends Component {
                     activeClass="is-active"
                     className="header-navigation_link"
                     to="event-details"
+                    data-to="event-details"
+                    onClick={this.sendAnalyticsEvent}
                     spy={scrollOptions.spy}
                     smooth={scrollOptions.smooth}
                     offset={scrollOptions.offset}
@@ -102,6 +115,8 @@ class GlobalHeader extends Component {
                     activeClass="is-active"
                     className="header-navigation_link"
                     to="accomodations"
+                    data-to="accomodations"
+                    onClick={this.sendAnalyticsEvent}
                     spy={scrollOptions.spy}
                     smooth={scrollOptions.smooth}
                     offset={scrollOptions.offset}
@@ -114,6 +129,8 @@ class GlobalHeader extends Component {
                     activeClass="is-active"
                     className="header-navigation_link"
                     to="registry"
+                    data-to="registry"
+                    onClick={this.sendAnalyticsEvent}
                     spy={scrollOptions.spy}
                     smooth={scrollOptions.smooth}
                     offset={scrollOptions.offset}
