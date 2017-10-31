@@ -25,7 +25,7 @@ const Home = () => {
   return (
     <section className="content">
       <Hero
-        image="http://i.alexiscordova.com/ylYRLj84Y7.jpg"
+        image="http://i.alexiscordova.com/TeCLnYYXzs.jpg"
         groom={config.groom.firstName}
         bride={config.bride.firstName}
         location={config.venue.name}
