@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import classNames from 'classnames'
+import { OutboundLink } from 'react-ga'
 import { HtmlRenderer, Parser } from 'commonmark'
 import Image from 'Components/image/Image'
 import './style.scss'
@@ -43,14 +44,19 @@ class Editorial extends Component {
   }
 
   _editorialContent(item, index, columnClasses) {
-    const { href, image, imageRetina, text, alt } = item,
+    const { name, href, image, imageRetina, text, alt } = item,
       contentClasses = classNames(columnClasses, 'editorial-content-item')
 
     return (
       <div className={contentClasses} key={index}>
         { href ? (
           <figure>
-            <a className="editorial-link" href={href}>
+            <OutboundLink
+              className="editorial-link"
+              eventLabel={name}
+              to={href}
+              target="_blank"
+            >
               <Image
                 classes={['editorial-image']}
                 image={require(`Images/${image}`)}
@@ -58,7 +64,7 @@ class Editorial extends Component {
                 alt={alt}
               />
               { text && this._editorialMetadata(item) }
-            </a>
+            </OutboundLink>
           </figure>
         ) : (
           <figure>
@@ -88,13 +94,13 @@ class Editorial extends Component {
 
   render() {
     const {
-      heading,
-      introduction,
-      layout,
-      content,
-      classes,
-      id
-    } = this.props,
+        heading,
+        introduction,
+        layout,
+        content,
+        classes,
+        id
+      } = this.props,
       editorialClasses = classNames('editorial', classes),
       headingClasses = classNames('editorial-heading', this.props.headingClasses)
 
