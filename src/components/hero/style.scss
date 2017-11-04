@@ -4,7 +4,7 @@
 
   &-image {
     height: 80vh;
-    background-position: bottom center;
+    background-position-y: bottom;
     background-size: cover;
 
     @include breakpoint(medium) {
