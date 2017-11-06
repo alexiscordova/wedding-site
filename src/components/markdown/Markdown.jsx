@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
+import ReactGA from 'react-ga'
 import classNames from 'classnames'
 import { HtmlRenderer, Parser } from 'commonmark'
 import './style.scss'
@@ -25,6 +26,21 @@ class Markdown extends Component {
       renderer = new HtmlRenderer()
 
     this.markdown = renderer.render(parser.parse(this.props.text))
+  }
+
+  componentDidMount() {
+    // This is a gross workaround for adding click analytics to links rendered by
+    // Commonmark (Markdown). There is most likely a better way to do this, and I’d never do this
+    // for a professional project. Please don’t judge me.
+    let links = document.querySelectorAll('.markdown a[href^="http"]')
+
+    links.forEach(link => {
+      link.addEventListener('click', () => {
+        ReactGA.outboundLink({
+          label: link.innerHTML
+        })
+      })
+    })
   }
 
   render() {
