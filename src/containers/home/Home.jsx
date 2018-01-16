@@ -12,15 +12,19 @@ import welcomeText from 'Data/welcome'
 import registryData from 'Data/registryData'
 
 let eventDetails = () => {
-  return (
-    <address>
-      <span className="u-text-bold">{config.venue.name} {config.venue.nameAdditional}</span>
-      <span>{config.venue.address}</span>
-      <span>{config.venue.city}, {config.venue.state}</span>
-      <span>{config.venue.zip}</span>
-    </address>
-  )
-}
+    return (
+      <address>
+        <span className="u-text-bold">{config.venue.name} {config.venue.nameAdditional}</span>
+        <span>{config.venue.address}</span>
+        <span>{config.venue.city}, {config.venue.state}</span>
+        <span>{config.venue.zip}</span>
+      </address>
+    )
+  },
+
+  entreeIntroduction = `The following are detailed descriptions of the dinner entrées. When filling out the response card, please make sure to write your initials next to the dish you wish to have. If you have any allergies, specific dietary restrictions, or general questions, please <a href="mailto:alexisandkrystle@icloud.com">let us know</a> and we will do our best to make accomodations.
+
+  All entrées will be served with plated salad—arugala with fennel, cherry tomatoes, pine nuts, and shaved parmesan reggiano with a meyer lemon vinaigrette—as well as assorted Firebrand organic artisan breads.`
 
 const Home = () => {
   return (
@@ -60,6 +64,7 @@ const Home = () => {
         headingClasses={['u-text-center']}
         classes={['editorial-content-centered']}
         layout="3-up"
+        introduction={entreeIntroduction}
         content={entreeDetails}
       />
 
