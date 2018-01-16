@@ -6,6 +6,7 @@ import Countdown from 'Components/countdown/Countdown'
 import GoogleMap from 'Components/google-map/GoogleMap'
 import config from 'Data/config'
 import weddingEventDetails from 'Data/weddingDetailData'
+import entreeDetails from 'Data/entreeDetailData'
 import travelAndAccomodationsText from 'Data/travelAndAccomodations'
 import welcomeText from 'Data/welcome'
 import registryData from 'Data/registryData'
@@ -51,6 +52,15 @@ const Home = () => {
         headline="Countdown"
         headlineClasses={['u-text-center']}
         weddingDate="04/21/2018 4:30 PM"
+      />
+
+      <Editorial
+        id="entree-details"
+        heading="Entrée Details"
+        headingClasses={['u-text-center']}
+        classes={['editorial-content-centered']}
+        layout="3-up"
+        content={entreeDetails}
       />
 
       <Markdown
