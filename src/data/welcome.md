@@ -3,4 +3,4 @@ Hello and welcome! If you’re reading this, this means you received our Save th
 You are all very special to us, and your support means everything. We can’t wait to celebrate with each and every one of you next April in San Francisco!
 
 Love, <br />
-Alexis Córdova and Krystle Mariano
+Alexis + Krystle
