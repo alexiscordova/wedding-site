@@ -68,12 +68,14 @@ class Editorial extends Component {
           </figure>
         ) : (
           <figure>
-            <Image
-              classes={['editorial-image']}
-              image={require(`Images/${image}`)}
-              imageRetina={require(`Images/${imageRetina}`)}
-              alt={alt}
-            />
+            { image &&
+              <Image
+                classes={['editorial-image']}
+                image={require(`Images/${image}`)}
+                imageRetina={require(`Images/${imageRetina}`)}
+                alt={alt}
+              />
+            }
             { text && this._editorialMetadata(item) }
           </figure>
         )}
