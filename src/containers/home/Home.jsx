@@ -7,7 +7,7 @@ import GoogleMap from 'Components/google-map/GoogleMap'
 import config from 'Data/config'
 import weddingEventDetails from 'Data/weddingDetailData'
 import entreeDetails from 'Data/entreeDetailData'
-import travelAndAccomodationsText from 'Data/travelAndAccomodations'
+import travelAndAccommodationsText from 'Data/travelAndAccommodations'
 import welcomeText from 'Data/welcome'
 import registryData from 'Data/registryData'
 
@@ -70,9 +70,9 @@ const Home = () => {
 
       <Markdown
         id="accomodations"
-        heading="Travel and Accomodations"
+        heading="Travel and Accommodations"
         headingClasses={['u-text-center']}
-        text={travelAndAccomodationsText}
+        text={travelAndAccommodationsText}
       />
 
       <Editorial

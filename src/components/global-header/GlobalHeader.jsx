@@ -115,13 +115,13 @@ class GlobalHeader extends Component {
                     activeClass="is-active"
                     className="header-navigation_link"
                     to="accomodations"
-                    data-to="accomodations"
+                    data-to="accommodations"
                     onClick={this.sendAnalyticsEvent}
                     spy={scrollOptions.spy}
                     smooth={scrollOptions.smooth}
                     offset={scrollOptions.offset}
                   >
-                    Accomodations
+                    Accommodations
                   </Link>
                 </li>
                 <li className="header-navigation_item">
