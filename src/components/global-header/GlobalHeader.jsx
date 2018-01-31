@@ -5,11 +5,26 @@ import Scroll from 'react-scroll'
 import './style.scss'
 
 const {
-  Link,
-  Events,
-  animateScroll: scroll,
-  scrollSpy
-} = Scroll
+    Link,
+    Events,
+    animateScroll: scroll,
+    scrollSpy
+  } = Scroll,
+
+  headerNavigation = [
+    {
+      id: 'event-details',
+      label: 'Details'
+    },
+    {
+      id: 'accommodations',
+      label: 'Accommodations'
+    },
+    {
+      id: 'registry',
+      label: 'Registry'
+    }
+  ]
 
 class GlobalHeader extends Component {
   constructor(props) {
@@ -34,6 +49,7 @@ class GlobalHeader extends Component {
         this.toggleShadow(true)
       }
     })
+
     Events.scrollEvent.register('end', (to, element) => {
       if (window.scrollY === 0) {
         this.toggleShadow()
@@ -95,49 +111,22 @@ class GlobalHeader extends Component {
           <div className="column-small-10 column-medium-offset-5 column-medium-6">
             <nav className="header-navigation">
               <ul className="u-list-unstyled" role="navigation">
-                <li className="header-navigation_item">
-                  <Link
-                    activeClass="is-active"
-                    className="header-navigation_link"
-                    to="event-details"
-                    data-to="event-details"
-                    onClick={this.sendAnalyticsEvent}
-                    spy={scrollOptions.spy}
-                    smooth={scrollOptions.smooth}
-                    offset={scrollOptions.offset}
-                  >
-                    <span className="u-is-hidden-small">
-                      Event </span>Details
-                  </Link>
-                </li>
-                <li className="header-navigation_item">
-                  <Link
-                    activeClass="is-active"
-                    className="header-navigation_link"
-                    to="accomodations"
-                    data-to="accommodations"
-                    onClick={this.sendAnalyticsEvent}
-                    spy={scrollOptions.spy}
-                    smooth={scrollOptions.smooth}
-                    offset={scrollOptions.offset}
-                  >
-                    Accommodations
-                  </Link>
-                </li>
-                <li className="header-navigation_item">
-                  <Link
-                    activeClass="is-active"
-                    className="header-navigation_link"
-                    to="registry"
-                    data-to="registry"
-                    onClick={this.sendAnalyticsEvent}
-                    spy={scrollOptions.spy}
-                    smooth={scrollOptions.smooth}
-                    offset={scrollOptions.offset}
-                  >
-                    Registry
-                  </Link>
-                </li>
+                {headerNavigation.map((navItem, index) => (
+                  <li className="header-navigation_item" key={index}>
+                    <Link
+                      activeClass="is-active"
+                      className="header-navigation_link"
+                      to={navItem.id}
+                      data-to={navItem.id}
+                      onClick={this.sendAnalyticsEvent}
+                      spy={scrollOptions.spy}
+                      smooth={scrollOptions.smooth}
+                      offset={scrollOptions.offset}
+                    >
+                      {navItem.label}
+                    </Link>
+                  </li>
+                ))}
               </ul>
             </nav>
           </div>
