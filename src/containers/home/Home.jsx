@@ -69,7 +69,7 @@ const Home = () => {
       />
 
       <Markdown
-        id="accomodations"
+        id="accommodations"
         heading="Travel and Accommodations"
         headingClasses={['u-text-center']}
         text={travelAndAccommodationsText}
