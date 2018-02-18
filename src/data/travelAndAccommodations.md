@@ -1,3 +1,7 @@
 We recommend either carpooling, or utilizing taxis and on-demand car services (Lyft, Uber, etc.) to the venue. If you choose to drive, paid parking is available on Fisher Loop, just above the Golden Gate Club, for about $2.00. The lot is free after 6pm.
 
-We have limited rooms reserved at [Inn at the Presidio](http://www.innatthepresidio.com/ "Inn At the Presidio - Boutique Hotel"), a boutique hotel less than a 10-minute walk from the Golden Gate Club. To reserve a room, provide group code **882** when you call [(415) 800-7356](tel:4158007356 "Phone number for Inn at the Presidio") or visit their website to make a reservation. Reservations will be available until February 15. If you are having trouble finding accommodations or need additional help, feel free to [reach out to us](mailto:alexisandkrystle@icloud.com).
+We have limited rooms available at [The Laurel Inn](http://bit.ly/2BHKpAz "The Laurel Inn"), located a short 8-minute drive from the Golden Gate Club. Use the promotion code **MARCOR** for a 10% discount. Please note: when using the link above, the code should already be added. To be sure, click the "modify" link on the right side near where it says "YOUR STAY" and the code should be displayed.
+
+Rooms at The Inn at the Presidio are now sold out.
+
+If you are having trouble finding accommodations or need additional help, feel free to [reach out to us](mailto:alexisandkrystle@icloud.com).
