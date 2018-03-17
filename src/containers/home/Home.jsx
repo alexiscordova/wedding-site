@@ -24,7 +24,11 @@ let eventDetails = () => {
 
   entreeIntroduction = `The following are detailed descriptions of the dinner entrées. When filling out the response card, please make sure to write your initials next to the dish you wish to have. If you have any allergies, specific dietary restrictions, or general questions, please <a href="mailto:alexisandkrystle@icloud.com">let us know</a> and we will do our best to make accomodations.
 
-  All entrées will be served with plated salad—arugala with fennel, cherry tomatoes, pine nuts, and shaved parmesan reggiano with a meyer lemon vinaigrette—as well as assorted Firebrand organic artisan breads.`
+  All entrées will be served with plated salad—arugala with fennel, cherry tomatoes, pine nuts, and shaved parmesan reggiano with a meyer lemon vinaigrette—as well as assorted Firebrand organic artisan breads.`,
+
+  brunchText = `On April 22nd, 2018, we will be hosting a post-wedding celebratory brunch during <a href="https://offthegrid.com/event/presidio-picnic/2018-4-22-11am">Off The Grid's Presidio Picnic</a> on the Main Parade Grounds (right in front of the Walt Disney Family Museum) in the heart of the Presidio, a few minutes walk from the Golden Gate Club. Over 30 food trucks will be on-site from 11am to 4pm, and we will have a space carved out for all of you! Feel free to bring any blankets, lawn chairs, frisbees, etc.
+
+  Presidio Picnic is absolutely kid-friendly and dog-friendly (on leash), so everyone is included! There is plenty of paid parking, but public transportation and/or biking is fantastic, too. If you have any questions, don't hesitate to <a href="mailto:alexisandkrystle@icloud.com">email us</a>.`
 
 const Home = () => {
   return (
@@ -50,6 +54,13 @@ const Home = () => {
         layout="3-up"
         introduction={eventDetails}
         content={weddingEventDetails}
+      />
+
+      <Markdown
+        id="brunch"
+        heading="Post-Wedding Brunch"
+        headingClasses={['u-text-center']}
+        text={brunchText}
       />
 
       <Countdown
